@@ -30,7 +30,7 @@
 			<div id="onboardingMessage" class="onboarding-container">
 				<div class="onboarding-content">
 					<h2>Welcome to Versus.cam!</h2>
-					<p>Versus.cam helps you manage esports streams with VDO.Ninja</p>
+					<p>Versus.cam helps you manage esports streams with RemoteVM</p>
 					<br>
 					<div class="onboarding-steps">
 						<div class="step-item">
@@ -92,7 +92,7 @@
 				<input type="checkbox" /><label>Prompt user for a display name?</label><br />
 				<input type="checkbox" /><label>Guest can see other guests? (higher CPU for guest)</label><br />
 				<input type="checkbox" /><label>Guest will join muted? (director can remotely unmute)</label><br />
-				<i>You can manually customize the invite link further; see the documentation at <a href="docs.vdo.ninja" target="_blank">docs.vdo.ninja</a></i>
+				<i>You can manually customize the invite link further; see the documentation at <a href="about.remotevm.ir" target="_blank">docs.R.V.M</a></i>
 				<br /><br />
 				<button onclick="modal.style.display = 'none';">Close</button>
 			</div>
@@ -149,12 +149,9 @@
 			<br /><br />
 			<div class="footer">
 				<div>
-					<a href="https://discord.vdo.ninja" class="discord" target="_blank"></a>
+					<a href="https://live.remotevm.ir" class="discord" target="_blank"></a>
 				</div>
-				<div>
-					<a class="github" href="https://github.com/steveseguin/vdoninja" rel="noopener" target="_blank" title="Star steveseguin/vdoninja on GitHub"></a>
-				</div>
-				<div style="cursor:pointer;" onclick="window.open('https://vdo.ninja');">For use with VDO.Ninja</div>
+				<div style="cursor:pointer;" onclick="window.open('https://live.remotevm.ir);">For use with RemoteVM</div>
 			</div>
 		</div>
 	</div>
@@ -693,7 +690,7 @@
 		}
 		// note: it's possible to set the width/height dyanmically via the IFRAME API also now. just call on video track load.
 		
-		getById("inviteLink").value = "https://vdo.ninja/?room="+roomname+hash+"&remote&label&quality&maxbandwidth&view&proaudio";
+		getById("inviteLink").value = "https://live.remotevm.ir/?room="+roomname+hash+"&remote&label&quality&maxbandwidth&view&proaudio";
 
 		
 		if (roomname!==false){
@@ -911,7 +908,7 @@
 				ele.dataset.streamID = streamID;
 			});
 			
-			container.sololink = "https://vdo.ninja/?solo&room="+roomname+additional+"&bitrate=20000&codec=av1&proaudio&ab=80&vbr&view="+container.sid+"&label=Solo_View"
+			container.sololink = "https://live.remotevm.ir/?solo&room="+roomname+additional+"&bitrate=20000&codec=av1&proaudio&ab=80&vbr&view="+container.sid+"&label=Solo_View"
 			container.querySelector("[data-sololink]").dataset.sololink = container.sololink;
 		}
 		return container;
