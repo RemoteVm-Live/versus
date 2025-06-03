@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Versus.cam</title>
+	<title>Cam.RemoteVm.ir</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
 	<link rel="stylesheet" href="./versus.css" >
@@ -29,8 +29,8 @@
 		<div id="mainContainer">
 			<div id="onboardingMessage" class="onboarding-container">
 				<div class="onboarding-content">
-					<h2>Welcome to Versus.cam!</h2>
-					<p>Versus.cam helps you manage esports streams with RemoteVM</p>
+					<h2>Welcome to cam.RemoteVm.ir!</h2>
+					<p>cam.remotevm helps you manage esports streams with RemoteVM</p>
 					<br>
 					<div class="onboarding-steps">
 						<div class="step-item">
@@ -109,7 +109,7 @@
 			<div style="float: right;cursor: pointer;user-select: none;" onclick="toggleChat();" title="Hide the chat window">x</div>
 			<div id="chatBody" class="message"> 
 				<div class="inMessage" data-translate='welcome-to-vdo-ninja-chat'>
-					Welcome to Versus.cam! You can send text messages directly to connected peers from here.
+					Welcome to cam.RemoteVm.ir! You can send text messages directly to connected peers from here.
 				</div>
 			</div>
 			<div id="chatSendBar">
@@ -682,10 +682,10 @@
 		}
 		
 		if (urlParams.has("vdo")){ // different origin
-			var iframesrc = "https://vdo.ninja/alpha/?debug&salt=vdo.ninja&speakermuted&sendframes&scene&room="+roomname+additional+"&manual&bitrate=300&viewheight=180&viewwidth=320&cleanoutput&label=Stream_Monitor";
+			var iframesrc = "https://live.remotevm.ir/?debug&salt=vdo.ninja&speakermuted&sendframes&scene&room="+roomname+additional+"&manual&bitrate=300&viewheight=180&viewwidth=320&cleanoutput&label=Stream_Monitor";
 			iframe.allow = "autoplay;camera;microphone;fullscreen;picture-in-picture;display-capture;";
 		} else { // compatible same origin (header policy set)
-			var iframesrc = "https://vdo.versus.cam/alpha/?salt=vdo.ninja&speakermuted&sendframes&scene&room="+roomname+additional+"&manual&bitrate=300&viewheight=180&viewwidth=320&cleanoutput&label=Stream_Monitor";
+			var iframesrc = "live.remotevm.ir/?salt=vdo.ninja&speakermuted&sendframes&scene&room="+roomname+additional+"&manual&bitrate=300&viewheight=180&viewwidth=320&cleanoutput&label=Stream_Monitor";
 			iframe.allow = "cross-origin-isolated;autoplay;camera;microphone;fullscreen;picture-in-picture;display-capture;";
 		}
 		// note: it's possible to set the width/height dyanmically via the IFRAME API also now. just call on video track load.
